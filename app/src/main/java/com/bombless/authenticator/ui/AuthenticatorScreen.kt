@@ -158,11 +158,7 @@ fun AuthenticatorScreen() {
                                     Toast.makeText(context, "验证码已复制", Toast.LENGTH_SHORT).show()
                                 }) { Icon(Icons.Default.ContentCopy, contentDescription = "复制验证码") }
                             }
-                            Row(verticalAlignment = Alignment.CenterVertically) {
-                                Text("${remaining}s 后刷新", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                                Spacer(Modifier.weight(1f))
-                                Text(entry.algorithm, style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
-                            }
+                            Text("${remaining}s 后刷新", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
                         }
                     }
                 }
